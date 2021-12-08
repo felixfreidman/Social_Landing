@@ -1,0 +1,655 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("../images/images/backgroundRed.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Button PageUp Section --------------------- */
+
+#toTopButton {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    z-index: 100000;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(3, 3, 37, 0.8);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-image: url("../images/images/upArrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+
+/* --------------------- Button PageUp Section */
+
+
+/* Font Section --------------------- */
+
+
+/* Font Section --------------------- */
+
+@font-face {
+    font-family: "Nominee";
+    src: url("../fonts/Nominee-Medium1.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Nominee";
+    src: url("../fonts/Nominee-LightExtended.otf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nominee";
+    src: url("../fonts/Nominee-HairlineExtended.otf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Nominee";
+    src: url("../fonts/Nominee-Bold.otf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Avant";
+    src: url("../fonts/16422.ttf");
+    font-weight: 500;
+}
+
+
+/* --------------------- Font Section */
+
+
+/* Header Section --------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(3, 3, 37, 0.8);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    position: fixed;
+    top: 0%;
+    min-height: 80px;
+    width: 100%;
+    cursor: default;
+    align-items: center;
+}
+
+.header_logo-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    max-width: 130px;
+    max-height: 80px;
+}
+
+.header_logo-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.header_navigation-section {
+    font-family: "Nominee";
+    font-weight: 400;
+    display: flex;
+    font-size: 16px;
+}
+
+.navigation-section_nav-button {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    position: relative;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.button-border {
+    margin-right: 5px;
+}
+
+.navigation-section_nav-button:hover {
+    transform: scale(1.1);
+}
+
+.header_contact-section {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.contact-link {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.contact-link:last-child {
+    margin-right: 0;
+}
+
+.navigation-section_nav-button {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation-section_nav-button:hover {
+    text-decoration: none;
+}
+
+
+/* --------------------- Header Section */
+
+
+/* Welcome Section --------------------- */
+
+.main_welcome-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: default;
+    position: relative;
+}
+
+.welcome-section_header {
+    color: #fff;
+    font-size: 50px;
+    font-family: "Avant";
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.welcome-section_subheader {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Avant";
+    margin-left: 10%;
+}
+
+
+/* --------------------- Welcome Section */
+
+
+/* Intro Section --------------------- */
+
+.main_intro-section {
+    height: fit-content;
+    height: -moz-fit-content;
+    background-image: url("../images/images/backgroundBlue.png");
+    background-position: 10% 50%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10%;
+    position: relative;
+    cursor: default;
+}
+
+.intro-section_text {
+    color: #fff;
+    font-family: "Nominee";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+/* --------------------- Intro Section */
+
+
+/* Services and Benefits Section --------------------- */
+
+.main_services-section,
+.main_benefit-section {
+    background-attachment: fixed;
+    background-image: url("../images/images/backgroundBlue.png");
+    background-position: 10% 50%;
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: default;
+    width: calc(80% - 20px);
+    height: fit-content;
+}
+
+.main_services-section {
+    margin-top: 100px;
+    border-radius: 22px 22px 0 0;
+}
+
+.main_benefit-section {
+    margin-bottom: 100px;
+    border-radius: 0 0 22px 22px;
+}
+
+.services-section_header {
+    color: #fff;
+    font-size: 40px;
+    font-family: "Nominee";
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.content-head {
+    color: #e28743;
+    font-size: 28px;
+    font-family: "Nominee";
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content-body {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Nominee";
+    font-weight: 400;
+    text-align: center;
+}
+
+.services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    width: 75%;
+}
+
+.section_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_benefit-section .services-section .section_content .content-head {
+    font-size: 40px;
+}
+
+.main_benefit-section .services-section_header {
+    font-size: 50px;
+}
+
+
+/* --------------------- Services and Benefits Section */
+
+
+/* Application Section --------------------- */
+
+.main_applicationForm-section {
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 20px 20px;
+    background-attachment: fixed;
+    background-image: url("../images/images/backgroundBlue.png");
+    background-position: 10% 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: default;
+    width: calc(80% - 20px);
+    border-radius: 22px;
+    margin-bottom: 100px;
+}
+
+.applicationForm {
+    position: relative;
+    display: flex;
+    padding: 40px;
+    height: fit-content;
+    border-radius: 16px;
+    justify-content: space-between;
+    font-family: "Nominee";
+}
+
+.applicationForm_advertismentInfo-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.advertismentInfo-section_header {
+    color: #e28743;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.advertismentInfo-section_subheader {
+    color: #e28743;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.applicationForm_applyInfo-section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.applyInfo-section_requiredActions-section {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+
+.requiredActions-section_telephone-input {
+    display: flex;
+    height: 50px;
+    width: 50%;
+    margin-right: 5%;
+}
+
+.telephone-input_preNumber {
+    background-color: #e28743;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 22px;
+    width: 25%;
+    height: 104%;
+}
+
+.telephone-input_number {
+    outline: none;
+    border: none;
+    background-color: rgba(3, 3, 37, 0.5);
+    border: 1px solid #e28743;
+    color: #e28743;
+    margin-left: 0px;
+    padding: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    width: 70%;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.requredActions-section_apply-button {
+    width: 45%;
+    height: 100%;
+    background-color: #e28743;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.requredActions-section_apply-button:active {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.applyInfo-section_personalAgree-checkbox {
+    display: none;
+}
+
+.applyInfo-section_personalAgree-checkbox+label::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e28743;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+
+.applyInfo-section_personalAgree-checkbox:checked+label::before {
+    border-color: #e28743;
+    background-color: #e28743;
+    background-image: url("../images/images/checkmark.svg");
+}
+
+.personalAgree-label>a,
+.personalAgree-label>a:visited {
+    text-decoration: none;
+    color: #76b5c5;
+}
+
+.personalAgree-label {
+    color: #fff;
+}
+
+.personalAgree-label>a:hover,
+.personalAgree-label>a:active {
+    color: #e28743;
+}
+
+.personalAgree-label {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+
+/* ----------------------------------------------- Конец стилей для мини-формы заявки */
+
+
+/* FAQ Section --------------------- */
+
+.main_FAQ-section {
+    height: fit-content;
+    height: -moz-fit-content;
+    padding: 0px 20px 20px;
+    border-radius: 22px;
+    margin-bottom: 100px;
+    background-attachment: fixed;
+    background-image: url("../images/images/backgroundBlue.png");
+    background-position: 10% 50%;
+    width: calc(80% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[name="FAQsection"] {
+    display: none;
+}
+
+input[name="FAQsection"]:checked+label>.question-block_row>.question-block-indicator {
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.FAQ-section_question-block {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 60px);
+    background-attachment: fixed;
+    background-image: url("../images/images/backgroundRed.jpg");
+    background-size: cover;
+    height: fit-content;
+    height: -moz-fit-content;
+    color: #fff;
+    padding: 20px 30px;
+    overflow-y: hidden;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.FAQ-section_question-block:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 30px;
+}
+
+.question-block_answer-block {
+    display: none;
+}
+
+input[name="FAQsection"]:checked+label>.question-block_answer-block {
+    display: block;
+}
+
+.question-block-indicator {
+    width: 24px;
+    height: 24px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.question-block_row {
+    display: flex;
+    align-items: center;
+    font-family: "Nominee";
+    font-size: 30px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question-block_answer-block {
+    margin-top: 22px;
+    font-family: "Nominee";
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.quiestion-block_quiestion-content {
+    width: 90%;
+    font-size: 30px;
+}
+
+
+/* --------------------- FAQ Section */
+
+
+/* Footer Section --------------------- */
+
+.footer {
+    min-height: 80px;
+    background-color: rgba(3, 3, 37, 0.8);
+    border-top: 1px solid #e28743;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.link-section_user-agreement-link,
+.link-section_user-agreement-link:visited {
+    font-family: "Nominee";
+    font-weight: 400;
+    text-decoration: none;
+    color: #e28743;
+}
+
+.link-section_user-agreement-link:hover,
+.link-section_user-agreement-link:active {
+    color: #76b5c5
+}
+
+
+/* --------------------- Footer Section */
+
+
+/* Number Application Section --------------------- */
+
+.main_number-application-form {
+    width: 30%;
+    height: 220px;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(3, 3, 37, 0.8);
+    border-radius: 22px;
+    align-items: center;
+    padding: 20px 20px;
+    font-family: "Nominee";
+    font-weight: 400;
+}
+
+.number-application-form_label {
+    font-size: 18px;
+    color: #fff;
+    font-family: "Nominee";
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.number-application-form_input {
+    outline: none;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 10px 15px;
+    color: #e28743;
+    background-color: rgb(3, 3, 37);
+}
+
+.number-application-form_input::placeholder {
+    color: #ccc;
+}
+
+.number-application-form_button {
+    color: white;
+    width: 80%;
+    height: 50px;
+    font-size: 24px;
+    font-family: "Nominee";
+    font-weight: 500;
+    background-color: #e28743;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.header_contact-section-mobile {
+    display: none;
+}
+
+#application-form_input {
+    margin-right: 0;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+/* --------------------- Number Application Section */
